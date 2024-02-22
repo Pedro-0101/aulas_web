@@ -24,7 +24,7 @@ let nota = 10;
 nota = "A";
 let estudante = {
     nome: "Maria",
-    idade: 20,
+    idade: 21,
     matricula: 12345
 };
 //***Annotations vs Inferência***
