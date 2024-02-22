@@ -41,7 +41,7 @@ type Estudante = Aluno & {
 
 let estudante: Estudante = {
     nome: "Maria",
-    idade: 20,
+    idade: 21,
     matricula: 12345
 };
 
