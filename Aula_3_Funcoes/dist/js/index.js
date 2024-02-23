@@ -4,7 +4,7 @@ function adicionar(x, y) {
     return x + y;
 }
 let resultado = adicionar(1, 2);
-console.log(adicionar(1, 2), resultado);
+//console.log(adicionar(1, 2), resultado)
 // funcao anonima
 let add = function (x, y) { return (x + y); };
 //Funções com tipos
@@ -52,6 +52,32 @@ let ponto1 = { x: 1, y: 5 };
 let ponto2 = { x: 10, y: 20 };
 somar(ponto1, ponto2); // retorna {x: 11, y: 25}
 somar([1, 1], [2, 2]); // retorna [3, 3]
+let operacao = prompt("Digite a operacao que deseja realizar: Soma, Subtracao, Multiplicacao, Divisao");
+let num1; // = prompt("Digite o primeiro numero")
+let num2; // = prompt("Digite o segundo numero")
+num1 = 10;
+num2 = 20;
+console.log("O resultado é: ", calculadora(num1, num2, operacao));
+function calculadora(num1, num2, op) {
+    switch (op) {
+        case "Soma":
+            return num1 + num2;
+            break;
+        case "Subtracao":
+            return num1 - num2;
+            break;
+        case "Multiplicacao":
+            return num1 * num2;
+            break;
+        case "Divisao":
+            return num1 / num2;
+            break;
+        default:
+            console.log("Opcao invalida");
+            return 0;
+            break;
+    }
+}
 /*
 Exercício 1: Calculadora Simples
 Crie uma função chamada calculadora que recebe três parâmetros:
