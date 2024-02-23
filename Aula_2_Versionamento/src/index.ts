@@ -45,3 +45,6 @@ Precisamos armazenar informações sobre diferentes produtos disponíveis na loj
     Em seguida, imprima todas as variáveis e propriedades do objeto produto usando console.log.
 
 */
+for(let i: number = 0; i<6; i++){
+    console.log(i)
+}
