@@ -71,14 +71,14 @@ let ponto2 = {x: 10, y: 20};
 somar(ponto1, ponto2); // retorna {x: 11, y: 25}
 somar([1, 1], [2, 2]); // retorna [3, 3]
 
-let operacao = prompt("Digite a operacao que deseja realizar: Soma, Subtracao, Multiplicacao, Divisao")
+//let operacao = prompt("Digite a operacao que deseja realizar: Soma, Subtracao, Multiplicacao, Divisao")
 let num1: number// = prompt("Digite o primeiro numero")
 let num2: number// = prompt("Digite o segundo numero")
 
 num1 = 10
 num2 = 20
 
-console.log("O resultado é: ", calculadora(num1, num2, operacao))
+//console.log("O resultado é: ", calculadora(num1, num2, operacao))
 
 function calculadora(num1: number, num2: number, op: any){
     switch(op){
@@ -155,3 +155,18 @@ let frase: string = "Ana"
 const fraseInverso = frase.split('').reverse().join('');
 
 */
+
+let frase: string = "teste";
+
+verificarPalindromo(frase)
+
+function verificarPalindromo(frase: string){
+    let fraseInv:string 
+    fraseInv = frase.split('').reverse().join('')
+
+    if(frase == fraseInv){
+        console.log("Palindromo")
+    } else{
+        console.log("Nao")
+    }
+}
