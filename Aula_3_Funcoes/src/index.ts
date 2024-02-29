@@ -154,8 +154,6 @@ Dica:
 let frase: string = "Ana"
 const fraseInverso = frase.split('').reverse().join('');
 
-*/
-
 let frase: string = "teste";
 
 verificarPalindromo(frase)
@@ -170,3 +168,11 @@ function verificarPalindromo(frase: string){
         console.log("Nao")
     }
 }
+
+*/
+
+function maiorNum(...val: number[]){
+    return Math.max.apply(null, val);
+}
+
+console.log(maiorNum(1,2,3,4,5,5,6,7,8,9))

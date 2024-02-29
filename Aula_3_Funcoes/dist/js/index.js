@@ -123,16 +123,23 @@ Dica:
 let frase: string = "Ana"
 const fraseInverso = frase.split('').reverse().join('');
 
-*/
-let frase = "teste";
-verificarPalindromo(frase);
-function verificarPalindromo(frase) {
-    let fraseInv;
-    fraseInv = frase.split('').reverse().join('');
-    if (frase == fraseInv) {
-        console.log("Palindromo");
-    }
-    else {
-        console.log("Nao");
+let frase: string = "teste";
+
+verificarPalindromo(frase)
+
+function verificarPalindromo(frase: string){
+    let fraseInv:string
+    fraseInv = frase.split('').reverse().join('')
+
+    if(frase == fraseInv){
+        console.log("Palindromo")
+    } else{
+        console.log("Nao")
     }
 }
+
+*/
+function maiorNum(...val) {
+    return Math.max.apply(null, val);
+}
+console.log(maiorNum(1, 2, 3, 4, 5, 5, 6, 7, 8, 9));
