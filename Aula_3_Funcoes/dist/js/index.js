@@ -152,5 +152,13 @@ function ePar(val) {
         return true;
     }
 }
+function calcMedia(val) {
+    let soma = 0;
+    for (let i = 0; val[i] != null; i++) {
+        soma += val[i];
+    }
+    return soma / val.length;
+}
 //console.log(maiorNum(1,2,3,4,5,5,6,7,8,9))
-ePar(32);
+//ePar(32);
+console.log(calcMedia([3, 2, 5, 6, 7]));
