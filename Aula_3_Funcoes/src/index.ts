@@ -175,4 +175,15 @@ function maiorNum(...val: number[]){
     return Math.max.apply(null, val);
 }
 
-console.log(maiorNum(1,2,3,4,5,5,6,7,8,9))
+function ePar(val:number){
+    if(val%2 == 1){
+        console.log("O numero " + val + " é impar");
+        return false;
+    }else{
+        console.log("O numero " + val + " é par");
+        return true;
+    }
+}
+
+//console.log(maiorNum(1,2,3,4,5,5,6,7,8,9))
+ePar(32);
