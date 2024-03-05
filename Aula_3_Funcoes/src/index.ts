@@ -196,4 +196,4 @@ function calcMedia(val: number[]){
 
 //console.log(maiorNum(1,2,3,4,5,5,6,7,8,9))
 //ePar(32);
-console.log(calcMedia([3,2,5,6,7]))
+console.log(calcMedia([2,2]))
