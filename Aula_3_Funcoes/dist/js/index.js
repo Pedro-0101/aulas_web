@@ -159,6 +159,12 @@ function calcMedia(val) {
     }
     return soma / val.length;
 }
+function caixaAlta(frase) {
+    let fraseUp = frase.toUpperCase();
+    return fraseUp;
+}
 //console.log(maiorNum(1,2,3,4,5,5,6,7,8,9))
 //ePar(32);
-console.log(calcMedia([2, 2]));
+//console.log(calcMedia([2,2]))
+let frase = "teste caixa alta";
+console.log(caixaAlta("frase"));
