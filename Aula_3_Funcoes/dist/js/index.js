@@ -177,6 +177,16 @@ function inverte(vetor) {
 function porcentagem(valor, porc) {
     return (valor + (valor * (porc / 100)));
 }
+function somaPar(val) {
+    let tam = val.length;
+    let soma = 0;
+    for (let i = 0; i <= tam; i++) {
+        if (val[i] % 2 == 0) {
+            soma += val[i];
+        }
+    }
+    return soma;
+}
 //console.log(maiorNum(1,2,3,4,5,5,6,7,8,9))
 //ePar(32);
 //console.log(calcMedia([2,2]))
@@ -187,4 +197,5 @@ function porcentagem(valor, porc) {
     console.log("nao e primo")
 }*/
 //console.log(inverte([1,2,3,4,5,6]))
-console.log(porcentagem(100, 50));
+//console.log(porcentagem(100,50))
+console.log(somaPar([1, 2, 3, 4]));
