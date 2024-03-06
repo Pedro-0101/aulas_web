@@ -199,8 +199,21 @@ function caixaAlta(frase: string){
     return fraseUp;
 }
 
+function ePrimo(num: number){
+    for(let i = 2; i<num/2; i++){
+        if(num%i == 0){
+            return false;
+        }
+    }
+    return true;
+}
+
 //console.log(maiorNum(1,2,3,4,5,5,6,7,8,9))
 //ePar(32);
 //console.log(calcMedia([2,2]))
-let frase = "teste caixa alta"
-console.log(caixaAlta("frase"))
+//console.log(caixaAlta("frase"))
+/*if(ePrimo(30)){
+    console.log("é primo")
+}else{
+    console.log("nao e primo")
+}*/
