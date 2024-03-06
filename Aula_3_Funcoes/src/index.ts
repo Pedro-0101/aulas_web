@@ -212,6 +212,10 @@ function inverte(vetor: number[]){
     return vetor.reverse()
 }
 
+function porcentagem(valor: number, porc: number){
+    return (valor+(valor*(porc/100)))
+}
+
 //console.log(maiorNum(1,2,3,4,5,5,6,7,8,9))
 //ePar(32);
 //console.log(calcMedia([2,2]))
@@ -222,3 +226,4 @@ function inverte(vetor: number[]){
     console.log("nao e primo")
 }*/
 //console.log(inverte([1,2,3,4,5,6]))
+//console.log(porcentagem(100,50))
