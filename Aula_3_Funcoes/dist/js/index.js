@@ -177,6 +177,13 @@ function inverte(vetor) {
 function porcentagem(valor, porc) {
     return (valor + (valor * (porc / 100)));
 }
+function revString(frase) {
+    let vetFrase;
+    vetFrase = frase.split('');
+    frase = vetFrase.reverse().join(" ");
+    frase.replace(",", " ");
+    return frase;
+}
 function somaPar(val) {
     let tam = val.length;
     let soma = 0;
@@ -198,4 +205,5 @@ function somaPar(val) {
 }*/
 //console.log(inverte([1,2,3,4,5,6]))
 //console.log(porcentagem(100,50))
-console.log(somaPar([1, 2, 3, 4]));
+console.log(revString("Frase ao contrario"));
+//console.log(somaPar([1,2,3,4]))
