@@ -208,6 +208,10 @@ function ePrimo(num: number){
     return true;
 }
 
+function inverte(vetor: number[]){
+    return vetor.reverse()
+}
+
 //console.log(maiorNum(1,2,3,4,5,5,6,7,8,9))
 //ePar(32);
 //console.log(calcMedia([2,2]))
@@ -217,3 +221,4 @@ function ePrimo(num: number){
 }else{
     console.log("nao e primo")
 }*/
+//console.log(inverte([1,2,3,4,5,6]))

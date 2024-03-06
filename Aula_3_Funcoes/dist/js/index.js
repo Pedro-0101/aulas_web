@@ -171,13 +171,16 @@ function ePrimo(num) {
     }
     return true;
 }
+function inverte(vetor) {
+    return vetor.reverse();
+}
 //console.log(maiorNum(1,2,3,4,5,5,6,7,8,9))
 //ePar(32);
 //console.log(calcMedia([2,2]))
 //console.log(caixaAlta("frase"))
-if (ePrimo(30)) {
-    console.log("é primo");
-}
-else {
-    console.log("nao e primo");
-}
+/*if(ePrimo(30)){
+    console.log("é primo")
+}else{
+    console.log("nao e primo")
+}*/
+console.log(inverte([1, 2, 3, 4, 5, 6]));
