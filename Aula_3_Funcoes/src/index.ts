@@ -244,7 +244,15 @@ function somaPar(val: number[]){
     return soma;
 }
 
+function fatorial(num: number): number{
+    //Exercicio 10
+    if(num == 1 ){
+        return 1;
+    }
 
+    return num * fatorial(num-1)
+
+}
 
 
 
@@ -261,3 +269,4 @@ function somaPar(val: number[]){
 //console.log(porcentagem(100,50))
 //console.log(revString("Frase ao contrario"))
 //console.log(somaPar([1,2,3,4]))
+//console.log(fatorial(5))

@@ -140,9 +140,11 @@ function verificarPalindromo(frase: string){
 
 */
 function maiorNum(...val) {
+    //Exercicio 1
     return Math.max.apply(null, val);
 }
 function ePar(val) {
+    //Exercicio 2
     if (val % 2 == 1) {
         console.log("O numero " + val + " é impar");
         return false;
@@ -153,6 +155,7 @@ function ePar(val) {
     }
 }
 function calcMedia(val) {
+    //Exercicio 3
     let soma = 0;
     for (let i = 0; val[i] != null; i++) {
         soma += val[i];
@@ -160,10 +163,12 @@ function calcMedia(val) {
     return soma / val.length;
 }
 function caixaAlta(frase) {
+    //Exercicio 4
     let fraseUp = frase.toUpperCase();
     return fraseUp;
 }
 function ePrimo(num) {
+    //Exercicio 5
     for (let i = 2; i < num / 2; i++) {
         if (num % i == 0) {
             return false;
@@ -172,12 +177,15 @@ function ePrimo(num) {
     return true;
 }
 function inverte(vetor) {
+    //Exercicio 6
     return vetor.reverse();
 }
 function porcentagem(valor, porc) {
+    //Exercicio 7
     return (valor + (valor * (porc / 100)));
 }
 function revString(frase) {
+    //Exercicio 8
     let vetFrase;
     vetFrase = frase.split('');
     frase = vetFrase.reverse().join(" ");
@@ -185,6 +193,7 @@ function revString(frase) {
     return frase;
 }
 function somaPar(val) {
+    //Exercicio 9
     let tam = val.length;
     let soma = 0;
     for (let i = 0; i <= tam; i++) {
@@ -193,6 +202,12 @@ function somaPar(val) {
         }
     }
     return soma;
+}
+function fatorial(num) {
+    if (num == 1) {
+        return 1;
+    }
+    return num * fatorial(num - 1);
 }
 //console.log(maiorNum(1,2,3,4,5,5,6,7,8,9))
 //ePar(32);
@@ -205,5 +220,6 @@ function somaPar(val) {
 }*/
 //console.log(inverte([1,2,3,4,5,6]))
 //console.log(porcentagem(100,50))
-console.log(revString("Frase ao contrario"));
+//console.log(revString("Frase ao contrario"))
 //console.log(somaPar([1,2,3,4]))
+console.log(fatorial(5));
