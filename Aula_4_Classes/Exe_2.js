@@ -26,8 +26,10 @@ class Calculadora {
     }
 }
 let dadosTeste = new Calculadora(10, 1);
+/*
 console.log(dadosTeste.getSoma);
 console.log(dadosTeste.getSub);
 console.log(dadosTeste.getMult);
 console.log(dadosTeste.getDiv);
 console.log(dadosTeste.getPor);
+*/ 
