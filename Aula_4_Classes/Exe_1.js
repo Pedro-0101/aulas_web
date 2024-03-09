@@ -15,5 +15,5 @@ class Carro_exe {
     }
 }
 let Carro1 = new Carro_exe("Toyota", "Corolla", 2020, "Prata");
-console.log(Carro1.GetIdade);
+//console.log(Carro1.GetIdade)
 //meuCarro.exibirInfo();
