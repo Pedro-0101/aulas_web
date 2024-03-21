@@ -6,7 +6,13 @@ const app = express();
 app.use(express.json());
 
 function appLog(){
-    console.log("A API se encontra disponível no URL: hhtp://localhost: 3000");
+    console.log("A API se encontra disponível no URL: http://localhost:3000");
 }
+
+function hello(req: Request, res: Response){
+    res.status(201).json({mensagem:"Hello world"});
+}
+
+app.get("/api/hello", hello);
 
 app.listen(PORT, appLog);

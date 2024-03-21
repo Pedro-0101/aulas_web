@@ -9,6 +9,10 @@ const PORT = (_a = process.env.PORT) !== null && _a !== void 0 ? _a : 3000;
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 function appLog() {
-    console.log("A API se encontra disponível no URL: hhtp://localhost: 3000");
+    console.log("A API se encontra disponível no URL: http://localhost:3000");
 }
+function hello(req, res) {
+    res.status(201).json({ mensagem: "Hello world" });
+}
+app.get("/api/hello", hello);
 app.listen(PORT, appLog);
