@@ -8,12 +8,13 @@ const app = express();
 app.use(express.json());
 
 function appLog(){
-    console.log('Servidor acessivel em: http:\\localhost:${PORT}');
+    console.log('Servidor acessivel em: http:\\localhost:>>>', PORT);
 }
 
 function newProduct(req : Request , res : Response){
     const obj: {name: string, desc: string, price: number} = req.body;
     console.log("obj>>> ", obj);
+    return res.send("sucesso");
 }
 
 app.post("/api/products", newProduct);

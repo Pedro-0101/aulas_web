@@ -10,11 +10,12 @@ const PORT = (_a = process.env.PORT) !== null && _a !== void 0 ? _a : 3000;
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 function appLog() {
-    console.log('Servidor acessivel em: http:\\localhost:${PORT}');
+    console.log('Servidor acessivel em: http:\\localhost:>>>', PORT);
 }
 function newProduct(req, res) {
     const obj = req.body;
     console.log("obj>>> ", obj);
+    return res.send("sucesso");
 }
 app.post("/api/products", newProduct);
 app.listen(PORT, appLog);
