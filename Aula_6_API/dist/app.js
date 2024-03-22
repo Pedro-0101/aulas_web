@@ -5,14 +5,16 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+let produtos = [];
 const PORT = (_a = process.env.PORT) !== null && _a !== void 0 ? _a : 3000;
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 function appLog() {
-    console.log("A API se encontra disponível no URL: http://localhost:3000");
+    console.log('Servidor acessivel em: http:\\localhost:${PORT}');
 }
-function hello(req, res) {
-    res.status(201).json({ mensagem: "Hello world" });
+function newProduct(req, res) {
+    const obj = req.body;
+    console.log("obj>>> ", obj);
 }
-app.get("/api/hello", hello);
+app.post("/api/products", newProduct);
 app.listen(PORT, appLog);
